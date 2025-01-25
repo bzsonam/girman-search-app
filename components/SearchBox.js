@@ -153,6 +153,9 @@ export default function SearchBox() {
             <p> Location : {selectedUser.city}</p>
             <p>Contact No :{selectedUser.contact_number}</p>
             <p>Profile Image </p>
+            {
+              // Making a PR for responsiveness Now
+            }
             <img src="/assets/profileimage.png" />
             <button class="absolute right-2" onClick={() => setIsOpen(false)}>
               close
