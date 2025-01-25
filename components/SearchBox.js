@@ -152,7 +152,7 @@ export default function SearchBox() {
             <p>{selectedUser.first_name + " " + selectedUser.last_name}</p>
             <p> Location : {selectedUser.city}</p>
             <p>Contact No :{selectedUser.contact_number}</p>
-            <p>Profile Image </p>
+            <p>Profile Image test </p>
             <img src="/assets/profileimage.png" />
             <button class="absolute right-2" onClick={() => setIsOpen(false)}>
               close
