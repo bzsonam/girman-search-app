@@ -146,10 +146,18 @@ export default function SearchBox() {
       </div>
       {isOpen && (
         <Popup setIsOpen={setIsOpen}>
-          <div className="bg-white">
-            <h1>Hi SOnu {selectedUser.contact_number}</h1>
+          <div className="relative bg-white p-4 pb-8 shadow-lg">
+            <h1>Fetch Details </h1>
+            <p>Here are the details of the following Employee Name : .</p>
+            <p>{selectedUser.first_name + " " + selectedUser.last_name}</p>
+            <p> Location : {selectedUser.city}</p>
+            <p>Contact No :{selectedUser.contact_number}</p>
+            <p>Profile Image </p>
+            <img src="/assets/profileimage.png" />
+            <button class="absolute right-2" onClick={() => setIsOpen(false)}>
+              close
+            </button>
           </div>
-          <button onClick={() => setIsOpen(false)}>close</button>
         </Popup>
       )}
     </div>
