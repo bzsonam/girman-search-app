@@ -51,7 +51,7 @@ export default function SearchBox() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={handleSearch}
-            className="text-[16px] active:bg-transparent outline-none ml-2"
+            className="w-[100%] text-[16px] active:bg-transparent outline-none ml-2"
           />
         </div>
 
